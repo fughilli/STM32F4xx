@@ -34,6 +34,8 @@ int main(void)
     /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
 
+    __HAL_RCC_GPIOH_CLK_ENABLE();
+
     /* Configure the system clock */
     SystemClock_Config();
 

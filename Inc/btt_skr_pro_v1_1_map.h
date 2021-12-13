@@ -21,10 +21,6 @@
 #error "Axis configuration is not supported!"
 #endif
 
-#if !defined(STM32F407xx) || HSE_VALUE == 8000000
-#error "This board has STM32F407 processor with a 25MHz crystal, select a corresponding build!"
-#endif
-
 #define BOARD_NAME "BTT SKR PRO v1.1"
 #define I2C_PORT 1
 #define I2C1_ALT_PINMAP // GPIOB, SCL_PIN = 6, SDA_PIN = 7
